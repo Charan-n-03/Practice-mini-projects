@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #fff;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(https://wallpapercave.com/wp/wp15251090.jpg);
+  backdrop-filter: blur(5px);
+  max-width: 100vw;
+  height: 30vh;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+
+.main .black {
+
+  background-color: black;
+  min-height: 250px;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  height: 30vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 4;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  color: aliceblue;
+}
+
+.top h1 {
+
+  font-family: "Silkscreen", sans-serif;
+  font-size: 99px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+
+.moving {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+marquee {
+  margin-bottom: 10px;
+  padding: 5px;
+  position: absolute;
+  background-color: #fff;
+  font-family: "Caveat Brush", cursive;
+  font-style: normal;
+}
+
+marquee::selection {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.profile a img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.profile p {
+  text-align: center;
+  width: 40px;
+  font-size: 10px;
+  color: aliceblue;
+}
+
+a:hover {
+  cursor: cell;
+}
+
+.profile {
+  display: inline-flex;
+  gap: 12px;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.projects {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  gap: 15px;
+  padding: 15px;
+  margin: 20px;
+  border: 2px solid lightgrey;
+}
+
+.prjct-n{
+  border-radius: 7px;
+  font-family: 'poppins',sans-serif;
+  display: flex;
+  height: 80px;
+  padding: 5px;
+  background-color: #141313e1;
+  border: 1px solid #6b6b6b ; 
+}
+
+.p-con h4{
+  font-size: 24px;
+}
+
+.p-con img{
+  height: 25px;
+  width: 25px;
+}
+
+.p-con pre{
+  display: flex;
+  align-items: center;
+}
+
+.prjct-n .p-img img{
+  height: 50px;
+  width: 50px;
+  margin: 6px;
+  border-radius: 5px;
+  border: 1px solid rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 1050px) {
+  .top h1 {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .top h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .top h1 {
+    font-size: 55px;
+  }
+}
